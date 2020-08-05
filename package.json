@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "serve": "netlify-lambda serve functions",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "netlify-lambda build functions"
   },
@@ -11,6 +12,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "netlify-lambda": "^2.0.1"
+    "dotenv": "^8.2.0",
+    "netlify-lambda": "^2.0.1",
+    "twilio": "^3.48.1"
   }
 }
