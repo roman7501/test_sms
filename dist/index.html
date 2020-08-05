@@ -3,15 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=8, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Maven+Pro|Yrsa|Press+Start+2P"
+      rel="stylesheet"
+    />
     <title>8 bit Revolution</title>
   </head>
   <body>
+    <p class="successMsg" role="alert" hidden>Messages sent...</p>
+    <p class="errorMsg" role="alert" hidden>Something went wrong...</p>
     <form name="contact" class="form" method="POST" data-netlify="true">
       <h1>Wanna spread the word?</h1>
       <button class="btn" type="submit">Send messages!</button>
     </form>
-    <p class="successMsg" role="alert" hidden>Messages sent...</p>
-    <p class="errorMsg" role="alert" hidden>Something went wrong...</p>
     <script>
       const form = document.querySelector("form");
       form.addEventListener("submit", async (event) => {
